@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #111111;
+  color: #e0e0e0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.header {
+  margin-bottom: 36px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  color: #888888;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding: 16px 20px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  background: #111111;
+  color: #e0e0e0;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.filter-group select:hover {
+  border-color: #666666;
+}
+
+.filter-group select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.notification-item:hover {
+  border-color: #444444;
+}
+
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.type-badge.placement {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.type-badge.event {
+  background: transparent;
+  color: #cccccc;
+  border: 1px solid #666666;
+}
+
+.type-badge.result {
+  background: transparent;
+  color: #888888;
+  border: 1px solid #444444;
+}
+
+.notification-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.notification-message {
+  font-size: 14px;
+  color: #d0d0d0;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.notification-meta {
+  display: flex;
+  gap: 16px;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.notification-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pagination button {
+  padding: 8px 18px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #2a2a2a;
+  border-color: #ffffff;
+}
+
+.pagination button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pagination .page-info {
+  font-size: 13px;
+  color: #999999;
+  min-width: 100px;
+  text-align: center;
+}
+
+.status-message {
+  text-align: center;
+  padding: 48px 20px;
+  color: #888888;
+  font-size: 14px;
+}
+
+.status-message.loading {
+  color: #cccccc;
+}
+
+.status-message.error {
+  color: #ffffff;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px 20px;
+  color: #555555;
+  font-size: 14px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #888888;
+}
